@@ -1,0 +1,5 @@
+brew install --cask eloston-chromium
+
+if terminal install doesnt work, try downloading binaries from the given link.
+
+https://ungoogled-software.github.io/ungoogled-chromium-binaries/
