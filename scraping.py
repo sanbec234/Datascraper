@@ -16,11 +16,11 @@ password = input("enter password: ")
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False, slow_mo=1000)
     page = browser.new_page()
-    page.goto("https://ecampus.psgtech.ac.in/studzone2/")
+    page.goto("")
     page.fill('input#txtusercheck', rollno)
     page.fill('input#txtpwdcheck', password)
     page.click('input[name = abcd3]')
-    page.goto("https://ecampus.psgtech.ac.in/studzone2/AttWfPercView.aspx")
+    page.goto("")
 
     name = page.inner_html('#TbStudInfo > tbody > tr:nth-child(1) > td.GenName')
     soup = BeautifulSoup(name, 'html.parser')
